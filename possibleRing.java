@@ -1,3 +1,16 @@
+/*
+
+Returns the maximum possible number of rings an isomer of a given a molecular formula consisting only of the elements
+carbons (C);
+nitrogens (N);
+hydrogens (H);
+oxygens (O);
+halogens (Cl, F, Br or I)
+can have.
+If the given formula is not valid, or no isomer can have any rings, return -1.
+
+*/
+
 int c,n,h,o,m,p,i;
 int possibleRing(String f) {
     f=f.replaceAll("(Cl|F|Br|I)","H");
